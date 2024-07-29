@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Математика","children":[{"content":"Числа і вирази","children":[{"content":"Вирази та їх перетворення","children":[{"content":"раціональні","children":[{"content":"тотожності","children":[],"payload":{"lines":"4,5"}},{"content":"одночлени (+-*)","children":[],"payload":{"lines":"5,6"}},{"content":"многочлени (+-*)","children":[],"payload":{"lines":"6,7"}},{"content":"розкладання на множники","children":[],"payload":{"lines":"7,8"}},{"content":"ФСМ","children":[],"payload":{"lines":"8,9"}},{"content":"дробово-раціональні вирази","children":[],"payload":{"lines":"9,10"}}],"payload":{"lines":"3,10"}},{"content":"степеневі","children":[{"content":"степінь з натуральним показником та його властивості","children":[],"payload":{"lines":"11,13"}}],"payload":{"lines":"10,13"}}],"payload":{"lines":"2,13"}}],"payload":{"lines":"1,2"}},{"content":"Рівняння, нерівності, системи","children":[{"content":"Системи","children":[{"content":"0.Вступ","children":[{"content":"1.Потрібно в задачах на виконання декількох умов, перетину.","children":[],"payload":{"lines":"16,17"}},{"content":"2.Розв'язком є корені, що...","children":[],"payload":{"lines":"17,18"}}],"payload":{"lines":"15,18"}},{"content":"1.Системи лінійних рівнянь \"СЛР\"","children":[{"content":"Методи розв'язку","children":[{"content":"Підстановка","children":[],"payload":{"lines":"20,21"}},{"content":"Графічний","children":[],"payload":{"lines":"21,22"}},{"content":"Додавання","children":[],"payload":{"lines":"22,23"}}],"payload":{"lines":"19,23"}},{"content":"Задачі на використання СЛР","children":[],"payload":{"lines":"23,25"}}],"payload":{"lines":"18,25"}}],"payload":{"lines":"14,25"}}],"payload":{"lines":"13,14"}},{"content":"Функції","children":[{"content":"\n<p data-lines=\"26,27\">Поняття і властивості функцій</p>","children":[{"content":"Буквені вирази і формули","children":[],"payload":{"lines":"27,28"}},{"content":"Графіки залежностей між величинами","children":[],"payload":{"lines":"28,29"}},{"content":"Функціональна залежність","children":[],"payload":{"lines":"29,30"}},{"content":"Способи задання функції","children":[],"payload":{"lines":"30,31"}},{"content":"Графік функції","children":[],"payload":{"lines":"31,32"}},{"content":"Область визначення","children":[],"payload":{"lines":"32,33"}},{"content":"Область значень","children":[],"payload":{"lines":"33,35"}}],"payload":{"lines":"26,35"}},{"content":"\n<p data-lines=\"35,36\">Види функцій</p>","children":[{"content":"Лінійна функція","children":[],"payload":{"lines":"36,38"}}],"payload":{"lines":"35,38"}}],"payload":{"lines":"25,26"}},{"content":"Планіметрія","children":[{"content":"Трикутники","children":[{"content":"Елементи","children":[{"content":"Медіана","children":[],"payload":{"lines":"41,42"}},{"content":"Бісектриса","children":[],"payload":{"lines":"42,43"}},{"content":"Висота","children":[],"payload":{"lines":"43,44"}}],"payload":{"lines":"40,44"}},{"content":"Ознаки рівності","children":[{"content":"Перша","children":[],"payload":{"lines":"45,46"}},{"content":"Друга","children":[],"payload":{"lines":"46,47"}},{"content":"Третя","children":[],"payload":{"lines":"47,48"}}],"payload":{"lines":"44,48"}},{"content":"Властивості","children":[{"content":"Сума кутів","children":[],"payload":{"lines":"49,50"}}],"payload":{"lines":"48,50"}},{"content":"Види","children":[{"content":"Рівносторонній","children":[],"payload":{"lines":"51,52"}},{"content":"Рівнобедрений","children":[],"payload":{"lines":"52,53"}},{"content":"Прямокутний","children":[],"payload":{"lines":"53,54"}}],"payload":{"lines":"50,54"}},{"content":"Периметр","children":[],"payload":{"lines":"54,55"}},{"content":"Коло","children":[{"content":"Радіус","children":[],"payload":{"lines":"56,57"}},{"content":"Діаметр","children":[],"payload":{"lines":"57,58"}},{"content":"Дотична до кола","children":[],"payload":{"lines":"58,59"}}],"payload":{"lines":"55,59"}}],"payload":{"lines":"39,59"}}],"payload":{"lines":"38,39"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
